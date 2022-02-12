@@ -1,1 +1,153 @@
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <script>
+            window.onload = function() {
+                for (let node of document.querySelectorAll("td")) {
+
+                    node.onclick = function() {
+                        if (node.className == "") {
+                            node.className = "selected"
+                        } else {
+                            node.className = ""
+                        }
+                    }
+
+                    if (node.textContent != "") continue;
+                    let charCode = Math.round(65 + Math.random() * 25)
+                    node.textContent = String.fromCharCode(charCode)
+                }
+            }
+        </script>
+        <style>
+            h1 {
+                font-family: sans-serif;
+                color: blue;
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+            }
+
+            td {
+                cursor: pointer;
+                border: 1px solid black;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+            }
+
+            td.selected {
+                background: lime;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>WordSearch</h1>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>T</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>E</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>R</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>M</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>N</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>L</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </table>
+        <ul>
+            <li>Computers hardware device to enter data and command lines</li>
+        </ul>
+    </body>
+</html>
