@@ -4,15 +4,39 @@
     <head>
         <script>
             window.onload = function() {
-                for (let node of document.querySelectorAll("td")) {
+                const tableData = document.querySelectorAll("td")
+                for (let node of tableData) {
 
-                    node.onclick = function() {
-                        if (node.className == "") {
-                            node.className = "selected"
-                        } else {
-                            node.className = ""
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('milestone')){
+                            node.style.backgroundColor = 'salmon'
                         }
-                    }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('terminal')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('zoom')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('coffee')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('github')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
 
                     if (node.textContent != "") continue;
                     let charCode = Math.round(65 + Math.random() * 25)
@@ -48,7 +72,20 @@
         <h1>WordSearch</h1>
         <table>
             <tr>
+                <td class='milestone'>M</td>
+                <td class='milestone'>I</td>
+                <td class='milestone'>L</td>
+                <td class='milestone'>E</td>
+                <td class='milestone'>S</td>
+                <td class='milestone'>T</td>
+                <td class='milestone'>O</td>
+                <td class='milestone'>N</td>
+                <td class='milestone'>E</td>
                 <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class='terminal'>T</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -60,7 +97,56 @@
             </tr>
             <tr>
                 <td></td>
-                <td>T</td>
+                <td class='terminal'>E</td>
+                <td></td>
+                <td></td>
+                <td class='zoom'>Z</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class='terminal'>R</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='zoom'>O</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class='terminal'>M</td>
+                <td class='coffee'>C</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='zoom'>O</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class='terminal'>I</td>
+                <td class='coffee'>O</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='zoom'>M</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class='terminal'>N</td>
+                <td class='coffee'>F</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -71,7 +157,20 @@
             </tr>
             <tr>
                 <td></td>
-                <td>E</td>
+                <td class='terminal'>A</td>
+                <td class='coffee'>F</td>
+                <td class='github'>G</td>
+                <td class='github'>I</td>
+                <td class='github'>T</td>
+                <td class='github'>H</td>
+                <td class='github'>U</td>
+                <td class='github'>B</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class='terminal'>L</td>
+                <td class='coffee'>E</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -82,7 +181,8 @@
             </tr>
             <tr>
                 <td></td>
-                <td>R</td>
+                <td></td>
+                <td class='coffee'>E</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -91,63 +191,13 @@
                 <td></td>
                 <td></td>
             </tr>
-            <tr>
-                <td></td>
-                <td>M</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>I</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>N</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>A</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>L</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
         </table>
         <ul>
-            <li>Computers hardware device to enter data and command lines</li>
+            <li>Computers hardware device to enter data and command lines?</li>
+            <li>Where we meet for our group video chats?</li>
+            <li>Website we made repository on?</li>
+            <li>What beverage got me through all of this?</li>
+            <li>Name of the first project?</li>
         </ul>
     </body>
 </html>
