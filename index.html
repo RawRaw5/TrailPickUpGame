@@ -37,6 +37,36 @@
                         }
                        node.classList.toggle('selected')
                     })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('html')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('javascript')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('css')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('slack')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
+                    node.addEventListener('click',function() {
+                        if (node.classList.contains('keyboard')){
+                            node.style.backgroundColor = 'salmon'
+                        }
+                       node.classList.toggle('selected')
+                    })
 
                     if (node.textContent != "") continue;
                     let charCode = Math.round(65 + Math.random() * 25)
@@ -52,6 +82,7 @@
             }
             table {
                 border-collapse: collapse;
+                margin: 0 auto;
             }
 
             td {
@@ -65,7 +96,6 @@
             td.selected {
                 background: lime;
             }
-
         </style>
     </head>
     <body>
@@ -81,11 +111,32 @@
                 <td class='milestone'>O</td>
                 <td class='milestone'>N</td>
                 <td class='milestone'>E</td>
+                <td class='milestone'>P</td>
+                <td class='milestone'>R</td>
+                <td class='milestone'>O</td>
+                <td class='milestone'>J</td>
+                <td class='milestone'>E</td>
+                <td class='milestone'>C</td>
+                <td class='milestone'>T</td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
             </tr>
             <tr>
                 <td></td>
                 <td class='terminal'>T</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -106,6 +157,16 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>
@@ -114,6 +175,16 @@
                 <td></td>
                 <td></td>
                 <td class='zoom'>O</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -130,6 +201,16 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>
@@ -142,11 +223,31 @@
                 <td class='zoom'>M</td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>
                 <td class='terminal'>N</td>
                 <td class='coffee'>F</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -166,6 +267,16 @@
                 <td class='github'>U</td>
                 <td class='github'>B</td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>
@@ -178,6 +289,16 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>
@@ -190,14 +311,256 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>J</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>V</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='slack'>S</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='slack'>L</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>S</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='slack'>A</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>C</td>
+                <td class='css'>S</td>
+                <td class='css'>S</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='slack'>C</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>R</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class='keyboard'>D</td>
+                <td class='keyboard'>R</td>
+                <td class='keyboard'>A</td>
+                <td class='keyboard'>O</td>
+                <td class='keyboard'>B</td>
+                <td class='keyboard'>Y</td>
+                <td class='keyboard'>E</td>
+                <td class='keyboard'>K</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>I</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>P</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='html'>H</td>
+                <td class='html'>T</td>
+                <td class='html'>M</td>
+                <td class='html'>L</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class='javascript'>T</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
-        <ul>
-            <li>Computers hardware device to enter data and command lines?</li>
-            <li>Where we meet for our group video chats?</li>
-            <li>Website we made repository on?</li>
-            <li>What beverage got me through all of this?</li>
-            <li>Name of the first project?</li>
-        </ul>
+        <ol>
+            <ol>
+                <li>Computers hardware device to enter data and command lines?</li>
+                <li>Where we meet for our group video chats?</li>
+                <li>Website we made repository on?</li>
+                <li>What beverage got me through all of this?</li>
+                <li>Name of the first project?</li>
+                <li>Abbreviation for HyperText Markup Language?</li>
+                <li>What makes a web page interactive?</li>
+                <li>Where do you style your webpage?</li>
+                <li>Application for us to communicate on?</li>
+                <li>Device we type on?</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </ol>
     </body>
 </html>
