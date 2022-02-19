@@ -1,0 +1,32 @@
+h1 {
+    font-family: sans-serif;
+    color: blue;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td {
+    cursor: pointer;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+td.selected {
+    background: lime;
+}
+
+p {
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin: 0;
+    height: 70px;
+    width: 200px;
+}
