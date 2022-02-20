@@ -16,9 +16,6 @@ td {
     text-align: center;
 }
 
-td.selected {
-    background: lime;
-}
 
 p {
     background-color: blue;
