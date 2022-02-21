@@ -13,15 +13,15 @@
   var countTimer = setInterval(countDown, 1000)
 let targetWords = [
   "TERMINAL",
-//   "COFFEE",
-//   "MILESTONEPROJECT",
-//   "ZOOM",
-//   "GITHUB",
-//   "HTML",
-//   "CSS",
-//   "JAVASCRIPT",
-//   "SLACK",
-//   "KEYBOARD",
+  "ZOOM",
+  "GITHUB",
+  "COFFEE",
+  "MILESTONEPROJECT",
+  "HTML",
+  "JAVASCRIPT",
+  "CSS",
+  "SLACK",
+  "KEYBOARD",
 ];
 let currentLetters = [];
 window.onload = function () {

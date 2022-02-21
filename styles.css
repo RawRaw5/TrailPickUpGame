@@ -1,29 +1,28 @@
 h1 {
-    font-family: sans-serif;
-    color: blue;
-    text-align: center;
+  font-family: sans-serif;
+  color: blue;
+  text-align: center;
 }
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
 td {
-    cursor: pointer;
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  text-align: center;
 }
 
-
 p {
-    background-color: blue;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 50px;
-    margin: 0 auto;
-    height: 70px;
-    width: 200px;
-} 
+  background-color: blue;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  height: 60px;
+  width: 150px;
+  box-shadow: 8px 8px 10px darkgray;
+}
