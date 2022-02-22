@@ -16,7 +16,7 @@ let targetWords = [
   "ZOOM",
   "GITHUB",
   "COFFEE",
-  "MILESTONEPROJECT",
+  "MILESTONE",
   "HTML",
   "JAVASCRIPT",
   "CSS",
@@ -43,7 +43,7 @@ function initializeGrid() {
         node.id = currentLetters.length;
         currentLetters.push(node);
         console.log(currentLetters);
-        node.style.backgroundColor = "salmon";
+        node.style.backgroundColor = "silver";
       }
 
       isTargetWord();
@@ -69,7 +69,7 @@ function isTargetWord() {
 
     for (let node of currentLetters) {
       node.id = "";
-      node.style.backgroundColor = "green";
+      node.style.backgroundColor = "gold";
     }
     currentLetters = [];
     if (targetWords.length == 0) {
